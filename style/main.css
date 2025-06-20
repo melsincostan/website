@@ -81,3 +81,11 @@ a:hover {
 img {
   min-width: 125px;
 }
+
+.other-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .25rem;
+}
