@@ -18,20 +18,14 @@
   background-color: var(--bg);
 }
 
-main {
+body {
   z-index: 10;
-  background-color: color-mix(in srgb, var(--fg) 10%, transparent);
-  backdrop-filter: blur(2px);
-  margin: 0px;
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  overflow-y: scroll;
-  overflow-x: clip;
-  padding: .25rem;
   text-align: center;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
 }
 
 ul {
@@ -57,6 +51,7 @@ a:hover {
   gap: .5rem;
   padding: .75rem;
   width: fit-content;
+  justify-content: center;
 }
 
 .projects > div { /* individual projects */
@@ -64,6 +59,7 @@ a:hover {
   background-color: color-mix(in srgb, var(--fg) 20%, transparent);
   border-radius: 1rem;
   box-shadow: 0px 0px 5px var(--bg);
+  width: 100%;
 }
 
 img {
