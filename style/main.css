@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: "Texturina";
-  src: url("/fonts/texturina.ttf");
+  font-family: "Unifraktur Cook";
+  src: url("/fonts/unifraktur-cook.ttf");
 }
 
 
@@ -46,7 +46,7 @@ ul {
 em {
   font-style: normal;
   color: var(--orange);
-  font-family: "Texturina", sans-serif;
+  font-family: "Unifraktur Cook", sans-serif;
 }
 
 a, a:visited {
