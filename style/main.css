@@ -5,12 +5,19 @@
   --white: white;
   --black: black;
   --orange: orange;
+  --pink: pink;
+  --purple: purple;
+  --green: green;
 
   --fg: light-dark(var(--black), var(--white));
   --bg: light-dark(var(--white), var(--black));
 
   color: var(--fg);
   background-color: var(--bg);
+}
+
+main {
+  z-index: 10;
 }
 
 a, a:visited {
@@ -24,3 +31,73 @@ a:hover {
   color: var(--orange);
   border-color: var(--orange);
 }
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: .5rem;
+  padding: .75rem;
+  width: fit-content;
+}
+
+.projects > div { /* individual projects */
+  padding: .5rem;
+  background-color: color-mix(in srgb, var(--fg) 20%, transparent);
+  border-radius: 1rem;
+}
+
+.bg {
+  position: fixed;
+  z-index: -10;
+}
+
+.bg1 {
+  background-color: color-mix(in srgb, var(--orange) 30%, transparent);
+  top: 25vh;
+  left: 15vw;
+  height: 25vh;
+  width: 25vh;
+  transform: rotate(45deg);
+}
+
+.bg2 {
+  top: 10vh;
+  left: 90vw;
+  height: 65px;
+  width: 65px;
+  background-color: color-mix(in srgb, var(--purple) 30%, transparent);
+  transform: rotate(23deg);
+}
+
+.bg2::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: color-mix(in srgb, var(--purple) 30%, transparent);
+  transform: rotate(30deg);
+}
+
+.bg2::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: color-mix(in srgb, var(--purple) 30%, transparent);
+  transform: rotate(60deg);
+}
+
+.bg3 {
+  bottom: 10vh;
+  right: 22vw;
+  background-color: color-mix(in srgb, var(--green) 30%, transparent);
+  border-radius: 100vw;
+  height: 10vh;
+  width: 10vh;
+}
+
