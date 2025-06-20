@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mlsn.fr</title>
+    <link rel="stylesheet" href="style/main.css"> 
 </head>
 <body>
     <main>
@@ -13,7 +14,8 @@
         <p>
             Hello!<br>
             I'm Mélusine, a random computer toucher from somewhere around Europe. (take a guess!)<br>
-            I like trains. A lot.
+            I like trains. A lot.<br>
+            I can also quit out of vim, but chose to stay regardless. It's comfy here.
         </p>
         <h2>Projects</h2>
         <div class="projects">
@@ -40,6 +42,34 @@
                 <ul class="links">
                     <li>
                         <a href="https://github.com/melsincostan/website" target="_blank">Source code</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>Various golang libraries</h3>
+                Mostly simple stuff that I end up using in other projects - or even just thought experiments!<br>
+                Only a few examples, there are probably more of them by now.
+                <ul class="links">
+                    <li>
+                        <a href="https://github.com/melsincostan/argon2id" target="_blank">argon2id</a>: utility around <code>x/crypto/argon2</code>, mostly for convenience.
+                    </li>
+                    <li>
+                        <a href="https://github.com/melsincostan/envconfig" target="_blank">envconfig</a>: fill structs with value from the environment, using struct tags.
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>Dubious Doohickeys</h3>
+                Some are made to fill a debugging or processing need, most of them are just made to see if it works and for fun.
+                <ul class="links">
+                    <li>
+                        <a href="https://github.com/melsincostan/reqpile" target="_blank">reqpile</a>: Listens for HTTP requests on a given port, dumps the request contents out on <code>STDOUT</code> and replies with <code>204 No Content</code>
+                    </li>
+                    <li>
+                        <a href="https://github.com/melsincostan/netmeow" target="_blank">netmeow</a>: Something somewhat like netcat, since it was faster to do this than figuring out some netcat tool for a windows VM with network but no internet access.
+                    </li>
+                    <li>
+                        <a href="https://github.com/melsincostan/ssg" target="_blank">ssg</a>: An approximation of a static site generator, using rust. It was used to generate a previous version of this homepage, along with a small blog part, that only ever had two articles.
                     </li>
                 </ul>
             </div>
