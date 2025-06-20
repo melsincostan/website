@@ -1,0 +1,26 @@
+:root {
+  color-scheme: light dark;
+  font-family: sans serif;
+
+  --white: white;
+  --black: black;
+  --orange: orange;
+
+  --fg: light-dark(var(--black), var(--white));
+  --bg: light-dark(var(--white), var(--black));
+
+  color: var(--fg);
+  background-color: var(--bg);
+}
+
+a, a:visited {
+  color: var(--fg);
+  text-decoration: none;
+  transition: all 250ms ease-in-out;
+  border-bottom: 1px dotted var(--fg);
+}
+
+a:hover {
+  color: var(--orange);
+  border-color: var(--orange);
+}
