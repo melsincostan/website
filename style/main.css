@@ -1,8 +1,19 @@
 @import url("/style/background.css");
 
+@font-face {
+  font-family: "Space Mono";
+  src: url("/fonts/space-mono-regular.ttf");
+}
+
+@font-face {
+  font-family: "Texturina";
+  src: url("/fonts/texturina.ttf");
+}
+
+
 :root {
   color-scheme: light dark;
-  font-family: sans serif;
+  font-family: "Space Mono", monospace;
 
   --white: white;
   --black: black;
@@ -32,6 +43,12 @@ ul {
   text-align: left;
 }
 
+em {
+  font-style: normal;
+  color: var(--orange);
+  font-family: "Texturina", sans-serif;
+}
+
 a, a:visited {
   color: var(--fg);
   text-decoration: none;
@@ -58,7 +75,6 @@ a:hover {
   padding: .5rem;
   background-color: color-mix(in srgb, var(--fg) 20%, transparent);
   border-radius: 1rem;
-  box-shadow: 0px 0px 5px var(--bg);
   width: 100%;
 }
 
