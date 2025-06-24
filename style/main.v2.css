@@ -56,6 +56,11 @@ a, a:visited {
   border-bottom: 1px dotted var(--fg);
 }
 
+.other-buttons a, .other-buttons a:visited {
+  text-decoration: none;
+  border: none;
+}
+
 a:hover {
   color: var(--orange);
   border-color: var(--orange);
