@@ -43,6 +43,10 @@ ul {
   text-align: left;
 }
 
+details summary {
+  cursor: pointer;
+}
+
 em {
   font-style: normal;
   color: var(--orange);
